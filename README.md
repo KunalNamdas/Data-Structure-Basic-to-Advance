@@ -37,7 +37,27 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 5: Stacks**
+
+### Chapter 5: ArrayList in Java
+
+- What is an ArrayList?
+- Key Features of ArrayList
+- Creating an ArrayList
+- Common Operations with ArrayList
+   - Adding Elements
+   - Accessing Elements
+   - Removing Elements
+   - Modifying Elements
+   - Iterating Through an ArrayList
+   - Checking if an ArrayList Contains an Element
+- Time Complexity of ArrayList Operations
+- Advantages of ArrayList
+- Disadvantages of ArrayList
+- Use Cases of ArrayList
+
+---
+
+### **Chapter 6: Stacks**
 - What is a Stack?
 - LIFO Principle
 - Stack Operations (Push, Pop, Peek)
@@ -46,7 +66,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 6: Queues**
+### **Chapter 7: Queues**
 - What is a Queue?
 - FIFO Principle
 - Types of Queues:
@@ -58,7 +78,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 7: Hashing**
+### **Chapter 8: Hashing**
 - Introduction to Hashing
 - Hash Tables and Hash Functions
 - Collision Handling (Chaining, Open Addressing)
@@ -66,7 +86,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 8: Trees**
+### **Chapter 9: Trees**
 - Basics of Trees
 - Binary Trees
 - Binary Search Trees (BST)
@@ -75,7 +95,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 9: Heaps**
+### **Chapter 10: Heaps**
 - Introduction to Heaps
 - Types of Heaps (Min-Heap, Max-Heap)
 - Heap Operations (Insert, Delete, Heapify)
@@ -84,7 +104,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 10: Graphs**
+### **Chapter 11: Graphs**
 - Basics of Graphs
 - Types of Graphs (Directed, Undirected, Weighted)
 - Graph Representations (Adjacency Matrix, Adjacency List)
@@ -93,7 +113,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 11: Searching Algorithms**
+### **Chapter 12: Searching Algorithms**
 - Linear Search
 - Binary Search
 - Interpolation Search
@@ -101,7 +121,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 12: Sorting Algorithms**
+### **Chapter 13: Sorting Algorithms**
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
@@ -112,7 +132,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 13: Recursion**
+### **Chapter 14: Recursion**
 - What is Recursion?
 - Advantages and Limitations
 - Recursive vs Iterative Solutions
@@ -120,7 +140,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 14: Dynamic Programming**
+### **Chapter 15: Dynamic Programming**
 - Basics of Dynamic Programming
 - Difference Between Recursion and DP
 - Common Problems:
@@ -130,7 +150,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 15: Backtracking**
+### **Chapter 16: Backtracking**
 - Introduction to Backtracking
 - N-Queens Problem
 - Subset Sum Problem
@@ -138,7 +158,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 16: Advanced Data Structures**
+### **Chapter 17: Advanced Data Structures**
 - Tries (Prefix Trees)
 - Segment Trees
 - Fenwick Trees (Binary Indexed Trees)
@@ -146,7 +166,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 17: Graph Algorithms**
+### **Chapter 18: Graph Algorithms**
 - Shortest Path Algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)
 - Minimum Spanning Tree (Kruskal, Prim)
 - Topological Sorting
@@ -154,7 +174,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 18: String Matching Algorithms**
+### **Chapter 19: String Matching Algorithms**
 - Naive Pattern Matching
 - Knuth-Morris-Pratt (KMP) Algorithm
 - Rabin-Karp Algorithm
@@ -162,7 +182,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 19: Complexity Analysis**
+### **Chapter 20: Complexity Analysis**
 - Time Complexity and Space Complexity
 - Big O Notation
 - Amortized Analysis
@@ -170,7 +190,7 @@ Here’s a comprehensive chapter-wise structure for a **Data Structures** guide,
 
 ---
 
-### **Chapter 20: Applications of Data Structures**
+### **Chapter 21: Applications of Data Structures**
 - Real-World Use Cases
 - Data Structures in System Design
 - Competitive Programming Problems
@@ -1818,10 +1838,6 @@ Queues are fundamental data structures used for scenarios where elements need to
 
 ---
 
-Got it! Let's correct the sequence and focus on **Chapter 8: Hashing in Java**, which you are referring to.
-
----
-
 # **Chapter 8: Hashing in Java**
 
 ---
@@ -2052,6 +2068,962 @@ HashSet: [Apple, Banana, Orange]
 Hashing is an essential technique in computer science and is used extensively in implementing **HashMap** and **HashSet**. Hash-based data structures provide **O(1)** time complexity for operations like insertion, removal, and access in most cases. They are highly efficient and are used in a wide range of applications like caching, database indexing, and task scheduling.
 
 ---
+
+# **Chapter 9: Trees in Java**
+
+---
+
+### **What is a Tree?**
+
+A **Tree** is a hierarchical data structure that consists of nodes connected by edges. It starts with a root node and branches into subtrees of children, with no cycles.
+
+---
+
+### **Key Properties of Trees**
+1. **Root**: The top node in the tree.
+2. **Parent**: A node that has children.
+3. **Child**: Nodes directly connected to another node when moving away from the root.
+4. **Leaf**: A node with no children.
+5. **Height of Tree**: The number of edges on the longest path from the root to a leaf.
+6. **Depth of Node**: The number of edges from the root to the node.
+
+---
+
+### **Types of Trees**
+
+1. **Binary Tree**: Each node has at most two children.
+2. **Binary Search Tree (BST)**: A binary tree where the left subtree contains values less than the root, and the right subtree contains values greater than the root.
+3. **Balanced Binary Tree**: A tree where the height difference between left and right subtrees is at most 1.
+4. **AVL Tree**: A self-balancing binary search tree.
+5. **Heap**: A complete binary tree used to implement priority queues.
+6. **B-Tree**: A self-balancing tree used in databases.
+
+---
+
+### **Binary Tree Implementation in Java**
+
+```java
+// A class representing a node in the binary tree
+class Node {
+    int data;
+    Node left, right;
+
+    // Constructor
+    Node(int value) {
+        data = value;
+        left = right = null;
+    }
+}
+
+public class BinaryTree {
+    // Root node
+    Node root;
+
+    // Traversing the tree in Inorder
+    void inorder(Node node) {
+        if (node != null) {
+            inorder(node.left);       // Visit left subtree
+            System.out.print(node.data + " ");  // Visit root
+            inorder(node.right);      // Visit right subtree
+        }
+    }
+
+    public static void main(String[] args) {
+        BinaryTree tree = new BinaryTree();
+
+        // Creating a binary tree
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+
+        // Inorder Traversal
+        System.out.println("Inorder traversal of binary tree:");
+        tree.inorder(tree.root);
+    }
+}
+```
+
+**Output**:
+```
+Inorder traversal of binary tree:
+4 2 5 1 3
+```
+
+---
+
+### **Binary Search Tree (BST) Implementation in Java**
+
+A **Binary Search Tree (BST)** allows for fast insertion, deletion, and search operations.
+
+```java
+class BST {
+    // Node class
+    class Node {
+        int data;
+        Node left, right;
+
+        Node(int value) {
+            data = value;
+            left = right = null;
+        }
+    }
+
+    // Root node of BST
+    Node root;
+
+    // Insert a node into BST
+    void insert(int value) {
+        root = insertRec(root, value);
+    }
+
+    // Recursive function to insert a value
+    Node insertRec(Node root, int value) {
+        if (root == null) {
+            root = new Node(value);
+            return root;
+        }
+        if (value < root.data)
+            root.left = insertRec(root.left, value);
+        else if (value > root.data)
+            root.right = insertRec(root.right, value);
+
+        return root;
+    }
+
+    // Inorder traversal
+    void inorder() {
+        inorderRec(root);
+    }
+
+    void inorderRec(Node root) {
+        if (root != null) {
+            inorderRec(root.left);
+            System.out.print(root.data + " ");
+            inorderRec(root.right);
+        }
+    }
+
+    public static void main(String[] args) {
+        BST tree = new BST();
+
+        // Insert values
+        tree.insert(50);
+        tree.insert(30);
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(70);
+        tree.insert(60);
+        tree.insert(80);
+
+        // Print inorder traversal
+        System.out.println("Inorder traversal of BST:");
+        tree.inorder();
+    }
+}
+```
+
+**Output**:
+```
+Inorder traversal of BST:
+20 30 40 50 60 70 80
+```
+
+---
+
+### **Common Tree Traversal Techniques**
+
+1. **Inorder Traversal**:
+   - Left subtree → Root → Right subtree.
+   - Output for the above BST: **20 30 40 50 60 70 80**.
+
+2. **Preorder Traversal**:
+   - Root → Left subtree → Right subtree.
+   - Output for the above BST: **50 30 20 40 70 60 80**.
+
+3. **Postorder Traversal**:
+   - Left subtree → Right subtree → Root.
+   - Output for the above BST: **20 40 30 60 80 70 50**.
+
+---
+
+### **Time Complexity of Tree Operations**
+
+| **Operation** | **Average Case** | **Worst Case** |
+|---------------|-------------------|----------------|
+| Search        | O(log n)         | O(n)           |
+| Insert        | O(log n)         | O(n)           |
+| Delete        | O(log n)         | O(n)           |
+
+**Space Complexity**: 
+- Depends on the height of the tree: **O(h)** where **h** is the height of the tree.
+
+---
+
+### **Advantages of Trees**
+1. **Hierarchical Data**: Trees naturally represent hierarchical relationships, such as file systems or organizational structures.
+2. **Efficient Searching**: Operations like searching and sorting are faster in trees compared to linear structures like arrays.
+3. **Dynamic Data Structure**: Trees can grow and shrink dynamically, unlike arrays which are fixed in size.
+
+---
+
+Let’s dive deeper into **advanced tree concepts**. We'll cover the following sections in detail:
+
+---
+
+## **Advanced Trees in Java (Deep Dive)**
+
+---
+
+#### **1. AVL Trees (Self-Balancing Binary Search Tree)**
+
+##### **What is an AVL Tree?**
+An **AVL Tree** is a type of self-balancing binary search tree where the difference between the heights of the left and right subtrees (called the balance factor) is at most 1 for every node.
+
+##### **Why Use AVL Trees?**
+- Ensures that the tree remains balanced, improving search, insertion, and deletion times.
+- Prevents degeneration into a linked list (as can happen with unbalanced binary search trees).
+
+##### **Key Operations**
+1. **Rotation**: To balance the tree after insertion or deletion.
+   - **Left Rotation (LL)**
+   - **Right Rotation (RR)**
+   - **Left-Right Rotation (LR)**
+   - **Right-Left Rotation (RL)**
+
+##### **Implementation in Java**
+```java
+class AVLTree {
+    class Node {
+        int data, height;
+        Node left, right;
+
+        Node(int value) {
+            data = value;
+            height = 1; // New nodes are initially added at height 1
+        }
+    }
+
+    private Node root;
+
+    // Get height of a node
+    int height(Node node) {
+        return node == null ? 0 : node.height;
+    }
+
+    // Get balance factor of a node
+    int getBalance(Node node) {
+        return node == null ? 0 : height(node.left) - height(node.right);
+    }
+
+    // Right rotation
+    Node rotateRight(Node y) {
+        Node x = y.left;
+        Node T = x.right;
+
+        x.right = y;
+        y.left = T;
+
+        // Update heights
+        y.height = Math.max(height(y.left), height(y.right)) + 1;
+        x.height = Math.max(height(x.left), height(x.right)) + 1;
+
+        return x;
+    }
+
+    // Left rotation
+    Node rotateLeft(Node x) {
+        Node y = x.right;
+        Node T = y.left;
+
+        y.left = x;
+        x.right = T;
+
+        // Update heights
+        x.height = Math.max(height(x.left), height(x.right)) + 1;
+        y.height = Math.max(height(y.left), height(y.right)) + 1;
+
+        return y;
+    }
+
+    // Insert a value into the AVL tree
+    Node insert(Node node, int value) {
+        if (node == null)
+            return new Node(value);
+
+        if (value < node.data)
+            node.left = insert(node.left, value);
+        else if (value > node.data)
+            node.right = insert(node.right, value);
+        else
+            return node; // Duplicates not allowed
+
+        // Update height of the current node
+        node.height = Math.max(height(node.left), height(node.right)) + 1;
+
+        // Get balance factor
+        int balance = getBalance(node);
+
+        // Perform rotations if unbalanced
+        if (balance > 1 && value < node.left.data)
+            return rotateRight(node); // LL case
+        if (balance < -1 && value > node.right.data)
+            return rotateLeft(node); // RR case
+        if (balance > 1 && value > node.left.data) {
+            node.left = rotateLeft(node.left);
+            return rotateRight(node); // LR case
+        }
+        if (balance < -1 && value < node.right.data) {
+            node.right = rotateRight(node.right);
+            return rotateLeft(node); // RL case
+        }
+
+        return node;
+    }
+
+    // Wrapper for inserting
+    void insert(int value) {
+        root = insert(root, value);
+    }
+
+    // Inorder traversal
+    void inorder(Node node) {
+        if (node != null) {
+            inorder(node.left);
+            System.out.print(node.data + " ");
+            inorder(node.right);
+        }
+    }
+
+    void inorder() {
+        inorder(root);
+    }
+
+    public static void main(String[] args) {
+        AVLTree tree = new AVLTree();
+
+        tree.insert(10);
+        tree.insert(20);
+        tree.insert(30);
+        tree.insert(40);
+        tree.insert(50);
+        tree.insert(25);
+
+        System.out.println("Inorder traversal of AVL Tree:");
+        tree.inorder();
+    }
+}
+```
+
+**Output**:
+```
+Inorder traversal of AVL Tree:
+10 20 25 30 40 50
+```
+
+##### **Time Complexity of AVL Trees**
+- **Search, Insert, Delete**: O(log n)
+- **Space Complexity**: O(n) (for storage)
+
+---
+
+#### **2. Heaps (Binary Heap)**
+
+##### **What is a Heap?**
+A **Heap** is a specialized tree-based data structure that satisfies the **heap property**:
+1. **Max-Heap**: The key at the root is greater than or equal to its children.
+2. **Min-Heap**: The key at the root is less than or equal to its children.
+
+##### **Why Use Heaps?**
+- Used in **priority queues**, **heap sort**, and finding the **k largest/smallest elements**.
+
+##### **Implementation of Min-Heap in Java**
+```java
+import java.util.PriorityQueue;
+
+public class MinHeap {
+    public static void main(String[] args) {
+        // Min-Heap using PriorityQueue
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+        // Add elements
+        minHeap.add(10);
+        minHeap.add(30);
+        minHeap.add(20);
+        minHeap.add(5);
+
+        System.out.println("Elements in Min-Heap:");
+        while (!minHeap.isEmpty()) {
+            System.out.print(minHeap.poll() + " ");
+        }
+    }
+}
+```
+
+**Output**:
+```
+Elements in Min-Heap:
+5 10 20 30
+```
+
+---
+
+#### **3. B-Trees**
+
+##### **What is a B-Tree?**
+A **B-Tree** is a self-balancing search tree designed for disk-based storage systems. It maintains sorted data and allows for efficient insertion, deletion, and search operations.
+
+##### **Use Cases of B-Trees**
+- Database indexing.
+- Filesystem implementations.
+
+---
+
+### **Advanced Traversals and Use Cases**
+
+1. **Level-Order Traversal**: Visits all nodes at the same depth before moving to the next level.
+   - Use case: Finding the shortest path in unweighted graphs.
+2. **Boundary Traversal**: Traverses the boundary nodes of a tree.
+   - Use case: Visualization or printing tree boundaries.
+
+---
+
+# **Chapter 10: Heap**
+
+---
+
+### **What is a Heap?**
+A **Heap** is a special tree-based data structure that satisfies the **heap property**:
+1. **Max-Heap**: The key of the root node is greater than or equal to the keys of its children.
+2. **Min-Heap**: The key of the root node is less than or equal to the keys of its children.
+
+---
+
+### **Why Use Heaps?**
+- Efficiently supports **priority queues**.
+- Optimized for **heap sort**.
+- Solves problems like **finding the k-largest/smallest elements**, **median in a stream**, and more.
+
+---
+
+### **Types of Heaps**
+1. **Max-Heap**:
+   - The largest element is always at the root.
+   - Used in algorithms like **Heap Sort**.
+   
+2. **Min-Heap**:
+   - The smallest element is always at the root.
+   - Used in **priority queues**.
+
+---
+
+### **Heap Operations**
+1. **Insertion**: Add an element to the heap and maintain the heap property.
+2. **Deletion (Remove)**: Remove the root node and reheapify.
+3. **Peek**: Access the root node without removing it.
+4. **Heapify**: Transform an arbitrary array into a valid heap.
+
+---
+
+### **Time Complexity**
+| Operation  | Time Complexity |
+|------------|-----------------|
+| Insert     | O(log n)        |
+| Delete     | O(log n)        |
+| Peek       | O(1)            |
+| Build Heap | O(n)            |
+
+---
+
+### **Heap Implementation**
+
+#### **1. Max-Heap in Java**
+```java
+import java.util.Collections;
+import java.util.PriorityQueue;
+
+public class MaxHeap {
+    public static void main(String[] args) {
+        // Max-Heap using PriorityQueue with reverse order
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+
+        // Insert elements
+        maxHeap.add(10);
+        maxHeap.add(20);
+        maxHeap.add(15);
+        maxHeap.add(30);
+
+        // Display elements
+        System.out.println("Max-Heap elements:");
+        while (!maxHeap.isEmpty()) {
+            System.out.print(maxHeap.poll() + " ");
+        }
+    }
+}
+```
+
+**Output**:
+```
+Max-Heap elements:
+30 20 15 10
+```
+
+---
+
+#### **2. Min-Heap in Java**
+```java
+import java.util.PriorityQueue;
+
+public class MinHeap {
+    public static void main(String[] args) {
+        // Min-Heap using PriorityQueue
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+        // Insert elements
+        minHeap.add(50);
+        minHeap.add(30);
+        minHeap.add(20);
+        minHeap.add(10);
+
+        // Display elements
+        System.out.println("Min-Heap elements:");
+        while (!minHeap.isEmpty()) {
+            System.out.print(minHeap.poll() + " ");
+        }
+    }
+}
+```
+
+**Output**:
+```
+Min-Heap elements:
+10 20 30 50
+```
+
+---
+
+### **Build Heap from Array**
+
+```java
+import java.util.Arrays;
+
+public class Heap {
+    // Helper function to heapify a subtree rooted at index i
+    static void heapify(int[] arr, int n, int i) {
+        int largest = i; // Initialize largest as root
+        int left = 2 * i + 1; // Left child
+        int right = 2 * i + 2; // Right child
+
+        // If left child is larger
+        if (left < n && arr[left] > arr[largest])
+            largest = left;
+
+        // If right child is larger
+        if (right < n && arr[right] > arr[largest])
+            largest = right;
+
+        // If root is not the largest
+        if (largest != i) {
+            int swap = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = swap;
+
+            // Recursively heapify the affected subtree
+            heapify(arr, n, largest);
+        }
+    }
+
+    // Function to build a Max-Heap from an array
+    static void buildHeap(int[] arr, int n) {
+        // Index of last non-leaf node
+        int startIdx = (n / 2) - 1;
+
+        // Perform reverse level-order traversal
+        for (int i = startIdx; i >= 0; i--) {
+            heapify(arr, n, i);
+        }
+    }
+
+    // Main function to demonstrate heap construction
+    public static void main(String[] args) {
+        int[] arr = {3, 9, 2, 1, 4, 5};
+        int n = arr.length;
+
+        buildHeap(arr, n);
+
+        System.out.println("Max-Heap Array:");
+        System.out.println(Arrays.toString(arr));
+    }
+}
+```
+
+**Output**:
+```
+Max-Heap Array:
+[9, 4, 5, 1, 3, 2]
+```
+
+---
+
+### **Heap Sort Algorithm**
+
+**Steps**:
+1. Build a Max-Heap.
+2. Swap the root (largest) with the last element.
+3. Reduce the heap size and call `heapify` for the root.
+4. Repeat until the heap size becomes 1.
+
+```java
+import java.util.Arrays;
+
+public class HeapSort {
+    static void heapify(int[] arr, int n, int i) {
+        int largest = i;
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+
+        if (left < n && arr[left] > arr[largest])
+            largest = left;
+
+        if (right < n && arr[right] > arr[largest])
+            largest = right;
+
+        if (largest != i) {
+            int swap = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = swap;
+
+            heapify(arr, n, largest);
+        }
+    }
+
+    static void heapSort(int[] arr) {
+        int n = arr.length;
+
+        // Build Max-Heap
+        for (int i = n / 2 - 1; i >= 0; i--)
+            heapify(arr, n, i);
+
+        // Extract elements from heap one by one
+        for (int i = n - 1; i > 0; i--) {
+            // Move current root to the end
+            int temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
+
+            // Call max heapify on reduced heap
+            heapify(arr, i, 0);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {12, 11, 13, 5, 6, 7};
+
+        heapSort(arr);
+
+        System.out.println("Sorted Array:");
+        System.out.println(Arrays.toString(arr));
+    }
+}
+```
+
+**Output**:
+```
+Sorted Array:
+[5, 6, 7, 11, 12, 13]
+```
+
+---
+
+### **Applications of Heaps**
+1. **Priority Queue**: Scheduling and managing tasks efficiently.
+2. **Dijkstra's Algorithm**: Finding the shortest path in graphs.
+3. **Median Maintenance**: Streaming data problems.
+4. **Heap Sort**: Sorting algorithms with O(n log n) complexity.
+
+---
+
+# **Chapter 11: Graphs**
+
+---
+
+### **What is a Graph?**
+
+A **Graph** is a collection of:
+1. **Vertices (Nodes)**: Represent entities (e.g., cities, computers).
+2. **Edges (Connections)**: Represent relationships or links between nodes.
+
+Graphs can be visualized as a network of nodes connected by lines.
+
+---
+
+### **Types of Graphs**
+
+1. **Directed Graph (Digraph)**:
+   - Edges have a direction.
+   - Example: Webpages with hyperlinks.
+
+2. **Undirected Graph**:
+   - Edges have no direction.
+   - Example: Social networks.
+
+3. **Weighted Graph**:
+   - Edges have weights or costs.
+   - Example: Road networks with distances.
+
+4. **Unweighted Graph**:
+   - Edges are not weighted.
+   - Example: Friendship graphs.
+
+5. **Cyclic Graph**:
+   - Contains at least one cycle (closed loop).
+
+6. **Acyclic Graph**:
+   - Does not contain any cycles.
+
+---
+
+### **Graph Representation**
+
+Graphs can be represented in the following ways:
+
+1. **Adjacency Matrix**:
+   - A 2D array where `matrix[i][j] = 1` if there is an edge from vertex `i` to vertex `j`, otherwise `0`.
+
+2. **Adjacency List**:
+   - A list of lists where each vertex has a list of connected vertices.
+
+3. **Edge List**:
+   - A list of edges, where each edge is represented as a pair `(u, v)` or `(u, v, weight)`.
+
+---
+
+### **Applications of Graphs**
+- **Social Networks**: Representing friendships or followers.
+- **Navigation Systems**: Shortest paths in road networks.
+- **Computer Networks**: Routing and packet transmission.
+- **Dependency Resolution**: Build systems or project planning.
+- **Machine Learning**: Graph-based clustering and recommendation systems.
+
+---
+
+### **Graph Traversal Algorithms**
+
+#### **1. Breadth-First Search (BFS)**
+- Explores nodes layer by layer (level order traversal).
+- Uses a **queue** for implementation.
+
+#### BFS Implementation in Java
+```java
+import java.util.*;
+
+public class GraphBFS {
+    private int vertices;
+    private LinkedList<Integer>[] adjList;
+
+    public GraphBFS(int vertices) {
+        this.vertices = vertices;
+        adjList = new LinkedList[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adjList[i] = new LinkedList<>();
+        }
+    }
+
+    public void addEdge(int src, int dest) {
+        adjList[src].add(dest); // For directed graph
+    }
+
+    public void bfs(int start) {
+        boolean[] visited = new boolean[vertices];
+        Queue<Integer> queue = new LinkedList<>();
+
+        visited[start] = true;
+        queue.add(start);
+
+        System.out.print("BFS Traversal: ");
+        while (!queue.isEmpty()) {
+            int node = queue.poll();
+            System.out.print(node + " ");
+
+            for (int neighbor : adjList[node]) {
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    queue.add(neighbor);
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        GraphBFS graph = new GraphBFS(5);
+        graph.addEdge(0, 1);
+        graph.addEdge(0, 2);
+        graph.addEdge(1, 3);
+        graph.addEdge(2, 4);
+
+        graph.bfs(0);
+    }
+}
+```
+
+**Output**:
+```
+BFS Traversal: 0 1 2 3 4
+```
+
+---
+
+#### **2. Depth-First Search (DFS)**
+- Explores as far as possible along one branch before backtracking.
+- Uses a **stack** for implementation (or recursion).
+
+#### DFS Implementation in Java
+```java
+import java.util.*;
+
+public class GraphDFS {
+    private int vertices;
+    private LinkedList<Integer>[] adjList;
+
+    public GraphDFS(int vertices) {
+        this.vertices = vertices;
+        adjList = new LinkedList[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adjList[i] = new LinkedList<>();
+        }
+    }
+
+    public void addEdge(int src, int dest) {
+        adjList[src].add(dest); // For directed graph
+    }
+
+    public void dfsUtil(int node, boolean[] visited) {
+        visited[node] = true;
+        System.out.print(node + " ");
+
+        for (int neighbor : adjList[node]) {
+            if (!visited[neighbor]) {
+                dfsUtil(neighbor, visited);
+            }
+        }
+    }
+
+    public void dfs(int start) {
+        boolean[] visited = new boolean[vertices];
+        System.out.print("DFS Traversal: ");
+        dfsUtil(start, visited);
+    }
+
+    public static void main(String[] args) {
+        GraphDFS graph = new GraphDFS(5);
+        graph.addEdge(0, 1);
+        graph.addEdge(0, 2);
+        graph.addEdge(1, 3);
+        graph.addEdge(2, 4);
+
+        graph.dfs(0);
+    }
+}
+```
+
+**Output**:
+```
+DFS Traversal: 0 1 3 2 4
+```
+
+---
+
+### **Shortest Path Algorithms**
+
+#### **1. Dijkstra's Algorithm**
+- Finds the shortest path from a source to all other nodes in a weighted graph.
+- Uses a **priority queue**.
+
+```java
+import java.util.*;
+
+public class Dijkstra {
+    static class Edge {
+        int dest, weight;
+
+        Edge(int dest, int weight) {
+            this.dest = dest;
+            this.weight = weight;
+        }
+    }
+
+    public static void dijkstra(List<List<Edge>> graph, int src) {
+        int vertices = graph.size();
+        int[] dist = new int[vertices];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[src] = 0;
+
+        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[1]));
+        pq.add(new int[]{src, 0});
+
+        while (!pq.isEmpty()) {
+            int[] current = pq.poll();
+            int node = current[0], nodeDist = current[1];
+
+            if (nodeDist > dist[node]) continue;
+
+            for (Edge edge : graph.get(node)) {
+                int newDist = dist[node] + edge.weight;
+                if (newDist < dist[edge.dest]) {
+                    dist[edge.dest] = newDist;
+                    pq.add(new int[]{edge.dest, newDist});
+                }
+            }
+        }
+
+        System.out.println("Shortest distances from source " + src + ":");
+        for (int i = 0; i < vertices; i++) {
+            System.out.println("To " + i + ": " + dist[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        int vertices = 5;
+        List<List<Edge>> graph = new ArrayList<>();
+        for (int i = 0; i < vertices; i++) graph.add(new ArrayList<>());
+
+        graph.get(0).add(new Edge(1, 4));
+        graph.get(0).add(new Edge(2, 1));
+        graph.get(2).add(new Edge(1, 2));
+        graph.get(1).add(new Edge(3, 1));
+        graph.get(2).add(new Edge(3, 5));
+
+        dijkstra(graph, 0);
+    }
+}
+```
+
+**Output**:
+```
+Shortest distances from source 0:
+To 0: 0
+To 1: 3
+To 2: 1
+To 3: 4
+To 4: Infinity
+```
+
+---
+
+### **Graph Algorithms**
+
+| **Algorithm**           | **Purpose**                                     | **Time Complexity**       |
+|--------------------------|------------------------------------------------|----------------------------|
+| BFS                     | Traversal, shortest path in unweighted graphs   | O(V + E)                  |
+| DFS                     | Traversal, cycle detection                      | O(V + E)                  |
+| Dijkstra's Algorithm    | Shortest path in weighted graphs                | O((V + E) log V)          |
+| Floyd-Warshall Algorithm | All-pairs shortest paths                       | O(V³)                     |
+| Kruskal's Algorithm     | Minimum Spanning Tree                          | O(E log E)                |
+| Prim's Algorithm        | Minimum Spanning Tree                          | O((V + E) log V)          |
+
+---
+
 
 
 This structure provides a comprehensive journey through **Data Structures**, ensuring both theoretical understanding and practical applications. Each chapter is designed to build on the previous, culminating in advanced topics and real-world applications.
