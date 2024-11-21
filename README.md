@@ -1,4 +1,4 @@
-Here’s a comprehensive chapter-wise structure for a **Data Structures** guide, covering topics from basics to advanced concepts in depth:
+**Data Structures** 
 
 ---
 
