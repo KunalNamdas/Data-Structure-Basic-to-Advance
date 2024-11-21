@@ -15,12 +15,16 @@
 - Data Structures in System Design
 - Competitive Programming Problems
 - Future Trends in Data Structures
+  
+---
 
 ### **Chapter 3: Complexity Analysis**
 - Time Complexity and Space Complexity
 - Big O Notation
 - Amortized Analysis
 - Best, Worst, and Average Case Scenarios
+  
+  ---
 
 ### **Chapter 4: Arrays**
 - Introduction to Arrays
